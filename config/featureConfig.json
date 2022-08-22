@@ -1,0 +1,33 @@
+{
+  "dataset":
+  {
+    "name": "VOC",
+    "path": "/home/Object_detection/cq/data/imgs",
+    "loadMethod":"LocalLoad"
+  },
+  "datasetConfig":
+  {
+      "size":"416",
+      "numClass":20
+  },
+  "featureVisualizationConfig":
+  {
+      "names":["GradCam","CAM"]
+  },
+  "model":
+  {
+    "name":"best.pt",
+    "modelPath": "/home/Object_detection/cq/Parameters/weight/best.pt",
+    "modelUsage"  :"Object detection",
+    "modelStructure":"YOLOv4",
+    "evaluationObject": "",
+    "modelStructurePath": "/home/Object_detection/cq/model"
+  },
+  "outputPath":
+  {
+    "dataset":"/home/Object_detection/cq/Output/CAM_Result",
+    "json": "/home/Object_detection/cq/Output/cam.json",
+    "model": ""
+  }
+}
+

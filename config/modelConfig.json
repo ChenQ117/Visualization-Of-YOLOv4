@@ -1,0 +1,31 @@
+{
+  "dataset":
+  {
+    "name": "VOC",
+    "path": "/home/Object_detection/cq/data/imgs",
+    "loadMethod":"LocalLoad"
+  },
+  "datasetConfig":
+  {
+      "size":416,
+      "numClass":20
+  },
+  "modelVisualizationConfig":
+  {
+      "names":["network"]
+  },
+  "model":
+  {
+    "name":"best.pt",
+    "modelPath": "/home/Object_detection/cq/Parameters/weight/best.pt",
+    "modelUsage"  :"Object detection",
+    "modelStructure":"YOLOv4",
+    "evaluationObject": "UpLoadNet",
+    "modelStructurePath": "/home/Object_detection/cq/model"
+  },
+  "outputPath": {
+    "dataset": "/home/Object_detection/cq/Output/Network_Result.png",
+    "json": "/home/Object_detection/cq/Output/network.json",
+    "model": ""
+  }
+}

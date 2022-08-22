@@ -1,0 +1,6 @@
+{
+  "modelVisualizationResult": {
+    "VisualizationPath": "/home/Object_detection/cq/yolov4_1_3_416_416_static.onnx",
+    "visualImg": "/home/Object_detection/cq/Network_Result.png"
+  }
+}
